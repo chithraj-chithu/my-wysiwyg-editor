@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Editor, EditorState, RichUtils } from 'draft-js';
-import './App.css';
 
 const MyEditor = () => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -52,13 +51,4 @@ const MyEditor = () => {
   );
 };
 
-function App() {
-  return (
-    <div className="App">
-      <h1>My WYSIWYG Editor</h1>
-      <MyEditor />
-    </div>
-  );
-}
-
-export default App;
+export default MyEditor;
